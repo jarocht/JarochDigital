@@ -57,26 +57,32 @@ nav a { font-size: .78rem; font-weight: 700; letter-spacing: .12em; text-transfo
 nav a:hover { opacity: 1; }
 
 .hero {
-  min-height: 84vh;
+  min-height: 64vh;
   display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(20rem, .95fr);
+  grid-template-columns: 1fr;
   gap: clamp(2rem, 5vw, 5rem);
   align-items: center;
-  padding: clamp(3rem, 7vw, 7rem) clamp(1.2rem, 6vw, 6.5rem) clamp(3rem, 6vw, 6rem);
+  padding: clamp(1rem, 2vw, 2rem) clamp(1.2rem, 6vw, 6.5rem) clamp(1rem, 2vw, 2rem);
   overflow: hidden;
 }
 
-.hero-copy { max-width: 850px; }
-.hero-mark { width: clamp(60px, 7vw, 92px); height: auto; margin-bottom: clamp(2rem, 5vw, 4rem); }
+.hero-copy { padding: clamp(2rem, 5vw, 5rem) clamp(1.2rem, 6vw, 6.5rem) clamp(1.5rem, 3vw, 3rem); }
+.hero-head {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.4rem;
+}
+.hero-mark { width: clamp(60px, 7vw, 92px); height: auto; margin-bottom: 0; }
 .eyebrow {
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   font-size: .8rem;
   font-weight: 800;
   letter-spacing: .22em;
   text-transform: uppercase;
   color: var(--slogan);
 }
-.hero-text { max-width: 660px; margin-top: 1.55rem; font-size: clamp(1.1rem, 1.7vw, 1.35rem); }
+.hero-text { width: 100%; margin-top: 1.55rem; font-size: clamp(1.1rem, 1.7vw, 1.35rem); }
 .hero-actions { display: flex; align-items: center; gap: 1.2rem; flex-wrap: wrap; margin-top: 2.2rem; }
 .button {
   display: inline-flex;
@@ -149,7 +155,7 @@ nav a:hover { opacity: 1; }
 
 .intro, .approach, .contact {
   margin: 0 clamp(1.2rem, 6vw, 6.5rem);
-  padding: clamp(2rem, 5vw, 4rem) 0;
+  padding: clamp(1.5rem, 3vw, 3rem) 0;
   border-top: 1px solid var(--line);
 }
 .intro {
@@ -170,8 +176,8 @@ nav a:hover { opacity: 1; }
   line-height: 1.45;
 }
 
-.services { padding: clamp(2rem, 5vw, 5rem) clamp(1.2rem, 6vw, 6.5rem); }
-.services > h2 { max-width: 920px; margin-bottom: clamp(2rem, 4vw, 3.2rem); }
+.services { padding: clamp(1.5rem, 3vw, 3rem) clamp(1.2rem, 6vw, 6.5rem); }
+.services > h2 { max-width: 920px; margin-bottom: clamp(1.5rem, 3vw, 3rem); }
 .service-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -199,6 +205,11 @@ nav a:hover { opacity: 1; }
   font-size: 1.7rem;
   color: var(--ink);
 }
+.icon img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
 .service-card p { margin-top: .85rem; }
 
 .approach {
@@ -209,10 +220,11 @@ nav a:hover { opacity: 1; }
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 0;
+  padding-bottom: clamp(1.5rem, 3vw, 3rem);
   overflow: hidden;
 }
 .approach-card, .trust-card {
-  padding: clamp(2rem, 5vw, 4rem);
+  padding: clamp(1.5rem, 3vw, 3rem);
   background: linear-gradient(145deg, rgba(233,241,239,.84), rgba(255,255,255,.65));
 }
 .approach-card p:not(.eyebrow), .trust-card p { margin-top: 1.2rem; }

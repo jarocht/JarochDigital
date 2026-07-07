@@ -1,0 +1,15 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Jaroch Digital mark">
+  <defs>
+    <linearGradient id="g" x1="12" y1="14" x2="108" y2="104" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#021802"/>
+      <stop offset="1" stop-color="#60DBCC"/>
+    </linearGradient>
+  </defs>
+  <rect x="12" y="12" width="96" height="96" fill="#021802"/>
+  <path d="M29 29H91V91H29V29Z" fill="#E9F1EF"/>
+  <path d="M29 29L49 49H91V29H29Z" fill="url(#g)" opacity="0.95"/>
+  <path d="M29 29L49 49V91H29V29Z" fill="#0B211D"/>
+  <path d="M91 91L71 71H29V91H91Z" fill="#0B211D"/>
+  <path d="M91 91L71 71V29H91V91Z" fill="#021802"/>
+  <rect x="48" y="48" width="24" height="24" fill="#E9F1EF"/>
+</svg>

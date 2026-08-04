@@ -90,21 +90,11 @@
   margin-top: 1.6rem;
 }
 
-.form-grid {
-  display: grid;
-  gap: 1rem;
-}
-
-.form-grid-two {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 .field {
   min-width: 0;
 }
 
-.field label,
-.choice-field legend {
+.field label {
   display: block;
   margin-bottom: .45rem;
   color: rgba(255,255,255,.92);
@@ -113,9 +103,7 @@
   letter-spacing: .045em;
 }
 
-.field input,
-.field select,
-.field textarea {
+.field input {
   width: 100%;
   min-height: 48px;
   padding: .8rem .9rem;
@@ -129,61 +117,21 @@
   transition: border-color .18s ease, box-shadow .18s ease;
 }
 
-.field textarea {
-  min-height: 118px;
-  resize: vertical;
-}
-
-.field input:focus,
-.field select:focus,
-.field textarea:focus {
+.field input:focus {
   border-color: var(--mint);
   box-shadow: 0 0 0 4px rgba(96,219,204,.18);
 }
 
-.field input[aria-invalid="true"],
-.field select[aria-invalid="true"],
-.field textarea[aria-invalid="true"] {
+.field input[aria-invalid="true"] {
   border-color: #f2a6a6;
   box-shadow: 0 0 0 4px rgba(242,166,166,.15);
 }
 
-.field-help,
 .form-privacy {
   margin-top: .4rem;
   color: rgba(255,255,255,.66);
   font-size: .78rem;
   line-height: 1.5;
-}
-
-.choice-field {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
-.choice-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .55rem;
-}
-
-.choice-row label {
-  display: inline-flex;
-  align-items: center;
-  gap: .4rem;
-  margin: 0;
-  padding: .65rem .8rem;
-  border: 1px solid rgba(233,241,239,.2);
-  border-radius: 999px;
-  background: rgba(255,255,255,.06);
-  cursor: pointer;
-}
-
-.choice-row input {
-  width: auto;
-  min-height: 0;
-  accent-color: var(--mint);
 }
 
 .submit-button {
@@ -265,7 +213,7 @@
 
 .problem-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1px;
   margin-top: clamp(2rem, 4vw, 4rem);
   overflow: hidden;
@@ -276,7 +224,7 @@
 }
 
 .problem-card {
-  min-height: 280px;
+  min-height: 250px;
   padding: clamp(1.5rem, 3vw, 2.4rem);
   background: rgba(247,250,249,.8);
 }
@@ -596,7 +544,6 @@
     padding-top: 2.5rem;
   }
 
-  .form-grid-two,
   .problem-grid,
   .process-list,
   .credibility-section {
@@ -637,10 +584,6 @@
     font-size: clamp(2.55rem, 13vw, 4.15rem);
   }
 
-  .choice-row {
-    align-items: stretch;
-    flex-direction: column;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {

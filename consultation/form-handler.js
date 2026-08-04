@@ -19,7 +19,7 @@
   function setLoading(isLoading) {
     submitButton.disabled = isLoading;
     submitButton.classList.toggle("is-loading", isLoading);
-    buttonLabel.textContent = isLoading ? "Sending request" : "Request a private consultation";
+    buttonLabel.textContent = isLoading ? "Sending request" : "Start a private consultation";
   }
 
   function markValidity() {
